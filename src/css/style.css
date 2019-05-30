@@ -5,10 +5,11 @@ body {
 img {
   max-width: 100%;
 }
-
+               
 .container {
   width: 1170px;
   margin: auto;
+
 }
 
 @media (max-width: 1200px) {
@@ -58,6 +59,7 @@ img {
 }
 
 .navbar__address {
+  padding-buttom: 9px;
   display: block;
   font-size: 13px;
   font-weight: 400;
