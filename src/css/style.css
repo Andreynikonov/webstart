@@ -1,5 +1,23 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("/webstart/src/fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("webstart/src/fonts/MuseoSanscyrlMuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("webstart/src/fonts/MuseoSanscyrlMuseoSansCyrl-300.woff") format("woff"), url("webstart/src/fonts/MuseoSanscyrlMuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("/webstart/src/fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("/webstart/src/fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("/webstart/src/fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("/webstart/src/fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-weight: 300;
+  color: #333333;
 }
 
 img {
@@ -58,14 +76,10 @@ img {
 }
 
 .navbar__address {
-  margin-buttom: 9px;
+  margin-buttom: 19px;
   display: block;
   font-size: 13px;
   font-weight: 400;
-}
-
-.navbar__contacts {
-  text-align: right;
 }
 
 .navbar__button {
@@ -77,6 +91,7 @@ img {
 .navbar__phone {
   color: #333333;
   font-size: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-decoration: none;
   margin-top: 10px;
@@ -104,6 +119,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
@@ -114,9 +132,10 @@ img {
 
 .hero-text__title {
   font-size: 41px;
+  line-height: 55px;
+  margin-bottom: 36px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  line-height: 45px;
-  margin-bottom: 45px;
 }
 
 .hero-text__subtitle {
@@ -138,7 +157,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .hero-list__images {
@@ -146,7 +165,7 @@ img {
   height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +179,8 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
