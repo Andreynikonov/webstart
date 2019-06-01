@@ -3,8 +3,7 @@
   background-position: center right
   background-size: contain
   position: relative
-  padding-top: 35px
-  max-height: 590px
+  padding-top: 50px
   &:before
     content: ''
     width: 50%
@@ -17,7 +16,7 @@
     width: 50%
     padding-right: 90px
     position: relative
-    margin-bottom: 99px
+    margin-bottom: 94px
   &__title
     max-width: 360px
     line-height: 35px
@@ -38,13 +37,14 @@
       justify-content: space-between
       margin-top: 30px
       font-size: 15px;
-      line-height: 24px;
+      line-height: 15px;
   &__span
     margin-bottom: 10px
     margin-right: 10px
      
   &__call
     max-width: 230px
+    line-height: 23px;
   &__tell
     font-weight: 400 
     +bolt     
@@ -55,7 +55,7 @@
       width: 100%
       margin-bottom: 10px
     &__button
-      font-size: 13px
+      font-size: 14px
 @media (max-width: 768px)
   .offer
     background: #ffffff
@@ -65,5 +65,12 @@
     &-footer
       flex-direction: column
     &__span
-      margin-top: 18px     
+      margin-top: 18px
+    &__button
+      font-size: 14px 
+@media (max-width: 540px)
+  .offer
+    &__button
+      font-size: 14px
+      padding: 19px 60px            
     

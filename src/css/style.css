@@ -51,7 +51,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 16px 30px;
 }
 
 .button:hover {
@@ -60,7 +60,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding-bottom: 10px;
 }
 
 .section-title {
@@ -76,7 +76,7 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 26px;
+  padding: 22px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -157,8 +157,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 53%;
-      flex-basis: 53%;
+  -ms-flex-preferred-size: 56%;
+      flex-basis: 56%;
   padding-right: 120px;
 }
 
@@ -256,8 +256,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
-  padding-top: 35px;
-  max-height: 590px;
+  padding-top: 50px;
 }
 
 .offer:before {
@@ -274,7 +273,7 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
-  margin-bottom: 99px;
+  margin-bottom: 94px;
 }
 
 .offer__title {
@@ -311,7 +310,7 @@ img {
           justify-content: space-between;
   margin-top: 30px;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 15px;
 }
 
 .offer__span {
@@ -321,6 +320,7 @@ img {
 
 .offer__call {
   max-width: 230px;
+  line-height: 23px;
 }
 
 .offer__tell {
@@ -338,7 +338,7 @@ img {
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -358,6 +358,16 @@ img {
   }
   .offer__span {
     margin-top: 18px;
+  }
+  .offer__button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .offer__button {
+    font-size: 14px;
+    padding: 19px 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
