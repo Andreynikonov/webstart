@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -95,6 +96,38 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+    
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section-title portfolio__title">Работая с 2007 года,<br>
+              мы сделали более 500 ремонтов в квартирах и домах
+          </h2>
+          <div class="slaider">
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-1__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-2__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-3__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-1__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-2__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->
+            <div class="slaider__item"><img class="slaider__image" src="img/portfolio/item-3__foto.jpg" alt=""></div>
+            <!-- /.slaider__item -->  
+          </div>
+          <div class="arrows portfolio__arrows">
+            <div class="arrow__left"><img src="img/portfolio/left-arrow.png" alt=""></div>
+            <div class="arrow__right"><img src="img/portfolio/right-arrow.png" alt=""></div>
+            
+          </div>
+          <!-- /.slaider -->
+          
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.portfolio -->
+    <
   </main>
   <!-- /.main -->
   <div class="modal" id="modal">
@@ -107,5 +140,39 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
   <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(Document).ready(function() {
+      $('.slaider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow__left'),
+        nextArrow: $('.arrow__right'),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 860,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+           {
+            breakpoint: 550,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>
