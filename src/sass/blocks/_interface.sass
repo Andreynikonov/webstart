@@ -1,6 +1,6 @@
 * 
   box-sizing: border-box
-body
+body 
   +reg
   color: $text-color
 img
@@ -11,9 +11,11 @@ img
 @media (max-width: 1200px)
   .container
     width: 780px 
-@media (max-width: 992px)
+@media (min-width: 992px)
   .button
-    *:hover: none
+    &:hover
+      background-color: lighten($main-color, 15%)
+      cursor: pointer
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -25,9 +27,7 @@ img
   border: none
   padding: 16px 30px
   outline: none
-  &:hover
-    background-color: lighten($main-color, 15%)
-    cursor: pointer
+  
 .section
   padding-bottom: 10px
   &-title
