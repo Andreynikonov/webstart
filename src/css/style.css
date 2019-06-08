@@ -45,6 +45,9 @@ img {
     background-color: #ffe04d;
     cursor: pointer;
   }
+  .arrows:hover {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 768px) {
@@ -63,7 +66,7 @@ img {
 }
 
 .section {
-  padding-bottom: 10px;
+  adding-bottom: 10px;
 }
 
 .section-title {
@@ -82,11 +85,7 @@ img {
   border: 1px solid #dddddd;
   padding: 22px;
   font-size: 15px;
-  border-radius: 10px;
-}
-
-.arrows:hover {
-  cursor: pointer;
+  border-radius: 1px;
 }
 
 .navbar {
@@ -417,15 +416,15 @@ img {
 .portfolio {
   background: #f5f5f5 url(../img/portfolio/points.jpg) repeat-y;
   background-size: 50%;
-  padding-top: 100px;
-  padding-bottom: 99px;
+  padding-top: 76px;
+  padding-bottom: 87px;
 }
 
 .portfolio__title {
-  padding-bottom: 99px;
-  max-width: 786px;
+  padding-bottom: 93px;
   margin: auto;
   line-height: 45px;
+  font-size: 30px;
 }
 
 .portfolio__arrows {
@@ -449,7 +448,7 @@ img {
   margin: auto;
   max-width: 515px;
   padding-top: 100px;
-  margin-bottom: 58px;
+  margin-bottom: 47px;
   font-size: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -495,7 +494,7 @@ img {
 }
 
 .card__title {
-  margin-top: 0;
+  font-size: 20px;
 }
 
 .card__image {
@@ -652,6 +651,180 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+.brif {
+  background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  min-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  isplay: block;
+  height: 70px;
+  width: 100%;
+  max-width: 368px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+}
+
+.interview {
+  padding-bottom: 90px;
+  padding-right: 70px;
+}
+
+.interview__title {
+  padding-top: 106px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+  line-height: 35px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  max-width: 400px;
+  font-size: 18px;
+}
+
+.form__title {
+  padding-top: 106px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.form__discripnion {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__button {
+    display: block;
+    max-width: 100%;
+  }
+  .form__discription {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .form__title {
+    padding-top: 1px;
+  }
+  .form__subtitle {
+    display: block;
+    margin-bottom: 34px;
+    padding-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
