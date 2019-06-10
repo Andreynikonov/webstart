@@ -1,0 +1,46 @@
+.footer
+  position: relative
+  &__phone
+    color: $text-color
+    font-size: 16px
+    +bolt
+    text-decoration: none
+  &__bold
+    +bolt   
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 200px
+  &__title
+    font-size: 22px
+    +bolt
+    line-height: 1.4
+    margin-bottom: 100px 
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list 
+    padding: 0    
+    list-style: none
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 39px
+    &__icon
+      width: 20px
+      height: 20px
+      line-height: 20px
+      text-align: center 
+      margin-right: 23px
+      margin-top: 7px 
+    &__text
+      font-size: 16px 
+      line-height: 26px
+      &__bold
+        +bolt
+         
