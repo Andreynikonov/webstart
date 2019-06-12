@@ -923,9 +923,10 @@ img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .footer .map {
+  .footer-map {
     position: relative;
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
   }
   .footer .contacts {
     padding: 68px 0;
