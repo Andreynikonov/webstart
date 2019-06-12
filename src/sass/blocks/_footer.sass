@@ -1,5 +1,7 @@
 .footer
   position: relative
+  &-map 
+    width: 50%
   &__phone
     color: $text-color
     font-size: 16px
@@ -8,10 +10,11 @@
   &__bold
     +bolt   
 .map
+  display: flex
   position: absolute
   left: 0
   top: 0
-  width: 50%
+  width: 100%
 .contacts
   flex-basis: 50%
   padding-top: 100px
@@ -19,8 +22,8 @@
   &__title
     font-size: 22px
     +bolt
-    line-height: 1.4
-    margin-bottom: 100px 
+    line-height: 33px
+    margin-bottom: 91px 
   &-block
     display: flex
     justify-content: flex-end
@@ -37,10 +40,24 @@
       line-height: 20px
       text-align: center 
       margin-right: 23px
-      margin-top: 7px 
+      margin-top: 4px 
     &__text
       font-size: 16px 
       line-height: 26px
       &__bold
         +bolt
-         
+@media(max-width:768px)
+    .footer
+      display: flex
+      flex-direction: column-reverse
+      .map
+        position: relative
+        min-width: 100%
+      .contacts
+        padding: 68px 0
+        flex-basis: unset
+        &-block
+            justify-content: center
+        &__title
+            margin-bottom: 40px
+      
